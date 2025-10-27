@@ -1,0 +1,58 @@
+
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.modal-content{
+  background: rgba(11, 11, 11, 0.8);
+  backdrop-filter: blur(16px);
+  color:#fff;
+  width:90%;
+  max-width:1000px;
+  border-radius:10px;
+  display:flex;
+  gap:20px;
+  padding:20px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.modal-left img{ width:300px; border-radius:6px; }
+.modal-right{ 
+  flex:1; 
+  overflow:auto; 
+  max-height:80vh; 
+}
+
+.modal-right h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal-close{
+  position:absolute; 
+  right:20px; 
+  top:20px; 
+  background:transparent; 
+  border:none; 
+  color:#fff; 
+  font-size:20px; 
+  cursor:pointer;
+}
+
+.tagline{ 
+  font-family: 'Lato', sans-serif;
+  font-style:italic; 
+  font-weight:300; 
+  margin-left:10px; 
+  color:#ccc; 
+}
+.meta{ color:#bbb; margin-top:4px; }
+.overview{ margin-top:10px; line-height:1.5; color:#ddd; }
+.crew-list{ margin-top:8px; padding-left:16px; color:#ddd;}
+.imdb-link{ display:inline-block; margin-top:12px; color:#ffd700; text-decoration:underline;}
